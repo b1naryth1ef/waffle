@@ -4,6 +4,12 @@ from waffle.util import generate_name
 from waffle.cli import command
 
 @command()
+def bootstrap(args, host=None, port=None, user=None):
+    """
+    Adds and configures a new physical host to the cluster
+    """
+
+@command()
 def create(args, name=None, image="ubuntu"):
     """
     Creates a new managed LXC container
